@@ -77,5 +77,71 @@ The status of the task with ID 1 will change to "done."
     Task deleted.
 This removes the task with ID 1 from the task list. If the task ID does not exist, it displays "Task not found."
 
+5. Listing all Tasks:
+    ```bash
+    Select an option: 5
+    All tasks: [
+    {
+        "id": 2,
+        "description": "Finish Node.js tutorial",
+        "status": "in-progress",
+        "createdAt": "2024-10-30T12:00:00.000Z",
+        "updatedAt": "2024-10-30T12:30:00.000Z"
+    }
+    ]
+This displays all tasks with their details (ID, description, status, and timestamps) in JSON format.
+
+6. Listing Done Tasks:
+    ```bash
+    Select an option: 6
+    Done tasks: [
+    {
+        "id": 3,
+        "description": "Submit project report",
+        "status": "done",
+        "createdAt": "2024-10-29T08:00:00.000Z",
+        "updatedAt": "2024-10-29T18:00:00.000Z"
+    }
+    ]
+Shows only tasks marked with the status "done."
+
+7. Listing Todo/Not Done Tasks:
+    ```bash
+    Select an option: 7
+    Todo tasks: [
+    {
+        "id": 4,
+        "description": "Review project code",
+        "status": "todo",
+        "createdAt": "2024-10-30T10:00:00.000Z",
+        "updatedAt": "2024-10-30T10:00:00.000Z"
+    }
+    ]
+Displays tasks with the "todo" status, showing those that haven't been started.
+
+8. Listing In Progress Tasks:
+    ```bash
+    Select an option: 8
+    In progress tasks: [
+    {
+        "id": 5,
+        "description": "Develop additional CLI features",
+        "status": "in-progress",
+        "createdAt": "2024-10-30T09:00:00.000Z",
+        "updatedAt": "2024-10-30T12:00:00.000Z"
+    }
+    ]
+Displays tasks with the status "in-progress," highlighting ongoing tasks.
+
+9. Existing the Application:
+    ```bash
+    Select an option: 9
+    Exiting Task Tracker CLI. Goodbye!
+This option terminates the application.
+
+
+
+
+
 
 
