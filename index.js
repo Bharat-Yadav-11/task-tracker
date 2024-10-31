@@ -7,7 +7,7 @@ function loadTasks() {
   if (fs.existsSync(path)) {
     const data = fs.readFileSync(path, 'utf-8');
     // Check if the file is empty or contains only whitespace
-    if(data.trim()) {
+    if (data.trim()) {
       return JSON.parse(data);
     }
   }
@@ -69,18 +69,18 @@ function handleMenuInput(option) {
         const tasks = loadTasks();
         const task = tasks.find((task) => task.id === parseInt(id));
 
-        console.log(`Current Description: ${task.description}`);
-        rl.question('Enter new description: ', (description) => {
-          if (task) {
+        if (task) {
+          console.log(`Current Description: ${task.description}`);
+          rl.question('Enter new description: ', (description) => {
             task.description = description;
             task.updatedAt = new Date().toISOString();
             saveTasks(tasks);
             console.log('Task updated:', task);
-          } else {
-            console.log('Task not found.');
-          }
+          });
+        } else {
+          console.log('Task not found.');
           showMenu();
-        });
+        }
       });
       break;
     case '3':

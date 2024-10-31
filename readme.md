@@ -139,9 +139,38 @@ Displays tasks with the status "in-progress," highlighting ongoing tasks.
     Exiting Task Tracker CLI. Goodbye!
 This option terminates the application.
 
+## Notes
+- Tasks are stored in tasks.json. If the file is missing, it will be created automatically upon adding the first task.
+- Task IDs are sequential and retained even if tasks are deleted to prevent duplicate identifiers.
+- All timestamps are in ISO format.
+
+## Contributing
+--------------
+
+If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
+
+### Contributing Guidelines
+
+* Please follow the existing code style and structure.
+* Make sure to test your changes before submitting a pull request.
+* Keep your changes concise and focused on a single issue or feature.
+
+## Authors
+---------
+
+* [Bharat Yadav](https://github.com/Bharat-Yadav-11)
+
+## Acknowledgments
+---------------
+
+* Thanks to the Node.js community for providing the `readline` module.
+* Thanks to the GitHub community for providing a platform for open-source projects.
+* Thanks to Roadmap.sh for providing this project idea.
 
 
-
-
-
+## License
+This project is open-source and available for personal or educational use.
+    ```bash
+    This `README.md` file provides a detailed guide to every menu option and feature, with sample interactions for each scenario. It ensures that new users have a clear understanding of the CLI tool's capabilities.
+    
 
