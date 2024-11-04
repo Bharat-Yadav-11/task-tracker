@@ -1,7 +1,7 @@
 # Task Tracker CLI
 ==========================
 
-Sample solution for the [number-guessing-game](https://roadmap.sh/projects/task-tracker) challenge from [roadmap.sh](https://roadmap.sh).
+Sample solution for the [task-tracker](https://roadmap.sh/projects/task-tracker) challenge from [roadmap.sh](https://roadmap.sh).
 
 Task Tracker CLI is a command-line tool for managing tasks, allowing users to create, update, delete, and view tasks with details like description, status, creation date, and last update date. Each task has a unique, sequential ID.
 
